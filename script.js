@@ -1,13 +1,21 @@
 let header = document.getElementById("header");
 let container = document.createElement("div");
+var divElements = document.createElement("div");
 container.id = "container";
 header.appendChild(container);
+
+let gridTitle = document.createElement("gridTitle");
+gridTitle.textContent = "Choose your Dimensions";
+gridTitle.style = `text-align: center; 
+                   font-size: 40px; 
+                   margin: auto;`;
+container.appendChild(gridTitle);
 
 xButton.addEventListener("click", function(e) {    
     container.innerHTML = " ";
     let  grid = prompt("How many rows and columns?");
-    container.style.gridTemplateRows = `repeat(${grid}, auto`;
-    container.style.gridTemplateColumns = `repeat(${grid}, auto`;
+    container.style.gridTemplateRows = `repeat(${grid}, auto)`;
+    container.style.gridTemplateColumns = `repeat(${grid}, auto)`;
     let total = grid * grid;
 
     if (total > 2500) {
@@ -25,4 +33,5 @@ xButton.addEventListener("click", function(e) {
             container.appendChild(divElements);
         };
     }
-})
+});
+

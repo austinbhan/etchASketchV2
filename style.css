@@ -4,8 +4,12 @@ body {
 #buttonContainer {
     text-align: center;
 }
+button {
+    height: 50px;
+    width: auto;
+    border-color: black;
+}
 #container {
-    font-size: small;
     display: grid;
     border-color: black;
     border-style: solid;
