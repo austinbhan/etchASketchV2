@@ -1,0 +1,20 @@
+body {
+    background-color: skyblue;
+}
+#buttonContainer {
+    text-align: center;
+}
+#container {
+    font-size: small;
+    display: grid;
+    border-color: black;
+    border-style: solid;
+    background-color: white;
+    width: 900px;
+    height: 900px;
+    border-width: 2px;
+    margin: auto;
+}
+h1 {
+    text-align: center;
+}
